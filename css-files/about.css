@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+* {
+    font-weight: 100;
+}
+
+body {
+    font-family: 'Oxygen', 'Sans-Serif';
+    background: linear-gradient(-45deg, #360c2c, #141e31, #221a3a, #310c18);
+    background-size: 400%, 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#footer {
+    height: 180px;
+}
+
+.mainbody {
+    color: white;
+}
+
+.maincontent {
+    opacity: 0%;
+    width: 33%;
+    float: left;
+    /* border-style: solid;
+    border-color: white;
+    border-width: 2px; */
+    margin-top: 210px;
+    margin-left: 130px;
+    line-height: 2em;
+    padding-left: 30px;
+    animation: slideInfo 1s ease forwards;
+}
+
+.contentsRight {
+    opacity: 0%;
+    width: 33%;
+    float: right;
+    margin-top: 90px;
+    margin-right: 250px;
+    line-height: 2em;
+    padding-right: 30px;
+    animation: slideInfo 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.contentsBottomRight {
+    opacity: 0%;
+    width: 33%;
+    position: absolute;
+    bottom: 358px;
+    left: 63%;
+    /* border-style: solid;
+    border-color: white;
+    border-width: 2px; */
+    margin-top: 90px;
+    margin-right: 90px;
+    line-height: 2em;
+    padding-right: 30px;
+    animation: slideInfo 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes slideInfo {
+    from {
+        transform: translateX(-20%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}

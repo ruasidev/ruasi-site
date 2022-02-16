@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+* {
+    font-weight: 100;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oxygen', 'Sans-Serif';
+    color: white;
+}
+
+.mainbody {
+    /* border-style: solid;
+    border-color: white;
+    border-radius: 10px; */
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0%;
+    animation: slidein 3s ease infinite;
+    animation-delay: 0.2s;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0%;
+    }
+    25% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+    75% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(20%);
+        opacity: 0%;
+    }
+}

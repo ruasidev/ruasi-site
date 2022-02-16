@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ethan's Website</title>
+    <link rel="stylesheet" href="./css-files/about.css" type="text/css">
+    <link rel="stylesheet" href="./css-files/footer.css">
+    <link rel="stylesheet" href="./css-files/navbar.css">
+    <link rel="icon" href="./css-files/images/cubelogo.png">
+</head>
+<body>
+    <script>
+        window.onload = document.querySelector("body").style.animationIterationCount = "1";
+        window.onload = document.querySelector("body").style.animationDuration = "1s";
+        window.onload = resetAnimation();
+        function resetAnimation(){
+            setTimeout(function() {
+                var element = document.querySelector("body");
+                element.style.animation = 'none';
+                element.offsetHeight;
+                element.style.animation = null;
+            }, 2000);
+        }
+    </script>
+    <div class="heading">
+        <div class="navbar">
+            <a class="notactive" href="index.html">Home</a>
+            <a class="notactive" href="contacts.html">Contacts</a>
+            <a class="active" href="#">About</a>
+            <a class="notactive" href="projects.html">Projects</a>
+        </div>
+    </div>
+    <div class="mainbody">
+        <div class="maincontent">
+            <h1>My Story</h1>
+            <p>I first learned the basics of HTML and CSS as a Sophomore in High School. That was the first time I ever programmed anything outside ofscracth. Only starting in 2020, I took an AP Computer Science Principals class as a Junior, and fell in love with JavaScript. My dad had always been a computerperson and we always did projects with computers whenever we got time to. I knew at some point between middle school and high school that I wanted to followin his footsteps and go into computer science. Since then I have been coding as much as possible and doing as much research as possible, taking all of the opportunities that I can get, and that comes to where I am now</p>
+        </div>
+        <div class="contentsRight">
+            <h2>Where I am now</h2>
+            <p>As of February 2022, I am a 16 year old JavaScript/HTML/CSS tutor for a high school of 3000 active students, getting into some other languages like Python and Java,experimenting with frameworks like selenium and React.js. I am always building my portfolio, and always looking for new opportunities to improve my skills.</p>
+        </div>
+        <div class="contentsBottomRight">
+            <h2>My goals</h2>
+            <p>Someday I would love to be in just a job that I enjoy, preferrably a senior developer at FAANG or some other tech giant (obviously). That may be basic, but I think its a solid answer.</p>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="quickcontentsLeft">
+            <h3 class="title">Quick Contents: </h3>
+            <div class="contents">
+                <a href="#">Source code for this website</a></br></br>
+                <a class="gitPlug" target="_blank" href="https://github.com/ruasidev">My github ;)</a>
+            </div>
+        </div>
+        <div class="quickcontentsRight">
+            <h3 class="disable-highlighting" style="color: #333">invisible</h3>
+            <a href="https://stackoverflow.com/users/18068051/ruasi" target="_blank">My StackOverflow Profile</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+/* ------------- initialize body and main ------------- */
+* {
+    font-weight: 100;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Oxygen', 'Sans-Serif';
+    background-image: url("./images/background.png");
+}
+
+#bodydiv {
+    border-width:0px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 20px;
+}
+
+.bodyinfo {
+    /* debug stuff */
+    text-align: center;
+    /* border-width:3px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 15px; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* end of debug stuff */
+    margin-top: 40px;
+    color: white;
+}
+
+/* ------------- sliding intros ------------- */
+
+.intro2 {
+    transform: translateX(-20%);
+    opacity: 0%;
+    margin-top: 50px;
+    animation: introSlide 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.intro3 {
+    transform: translateX(-20%);
+    opacity: 0%;
+    margin-top: 30px;
+    animation: introSlide 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.intro4 {
+    transform: translateX(-20%);
+    opacity: 0%;
+    margin-top: 160px;
+    animation: introSlide 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes introSlide {
+    from {
+        transform: translateX(-20%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
