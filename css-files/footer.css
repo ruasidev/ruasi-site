@@ -20,9 +20,9 @@
 }
 
 .quickcontentsLeft {
-    transform: translateY(20%);
-    opacity: 0%;
-    animation: footerslide 1s ease forwards;
+    transform: translateY(0%); /* changed translateY(-20%) */
+    opacity: 100%; /* changed opacity: 0% */
+    animation: none; /* changed footerslide 1s ease forewards */
     /* border-width:3px;
     border-style:solid;
     border-color:black;
@@ -81,7 +81,7 @@
     float: right;
     width: 25%;
     margin-left: 80px;
-    animation: footerslide 1s ease forwards;
+    animation: none; /* changed footerslide 1s ease forwards */
 }
 
 .quickcontentsRight a {
