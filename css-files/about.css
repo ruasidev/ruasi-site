@@ -11,6 +11,10 @@ body {
     animation: gradientBackground 15s ease infinite;
 }
 
+.wrapper {
+    padding-bottom: 220px;
+}
+
 
 @keyframes gradientBackground {
     0% {
@@ -24,57 +28,184 @@ body {
     }
 }
 
-
-#footer {
-    height: 180px;
+@media screen {
+    #footer {
+        height: 180px;
+    }
+    
+    .mainbody {
+        color: white;
+    }
+    
+    .mainbody {
+        width: 50%;
+        left: 20px;
+        position: relative;
+        /* border-style: solid;
+        border-color: white;
+        border-width: 2px; */
+        margin-top: 170px;
+        margin-left: 40px;
+        line-height: 2em;
+        padding-left: 30px;
+    }
+    
+    .content1 {
+        opacity: 0%;
+        animation: slideInfo 1s ease forwards;
+    }
+    
+    .content2 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .content3 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.4s;
+    }
 }
 
-.mainbody {
-    color: white;
+@media screen and (max-width: 1000px) {
+    #footer {
+        height: 100px;
+    }
+    
+    .mainbody {
+        color: white;
+    }
+    
+    .mainbody {
+        width: 70%;
+        left: 10px;
+        position: relative;
+        /* border-style: solid;
+        border-color: white;
+        border-width: 2px; */
+        margin-top: 170px;
+        margin-left: 40px;
+        line-height: 2em;
+        padding-left: 30px;
+    }
+    
+    .content1 {
+        opacity: 0%;
+        animation: slideInfo 1s ease forwards;
+    }
+    
+    .content2 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .content3 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.4s;
+    }
 }
 
-.maincontent {
-    opacity: 0%;
-    width: 33%;
-    float: left;
-    /* border-style: solid;
-    border-color: white;
-    border-width: 2px; */
-    margin-top: 210px;
-    margin-left: 130px;
-    line-height: 2em;
-    padding-left: 30px;
-    animation: slideInfo 1s ease forwards;
+@media screen and (max-width: 600px) {
+    #footer {
+        height: 180px;
+    }
+    
+    .mainbody {
+        color: white;
+    }
+    
+    .mainbody {
+        width: 70%;
+        left: 10px;
+        position: relative;
+        /* border-style: solid;
+        border-color: white;
+        border-width: 2px; */
+        margin-top: 170px;
+        margin-left: 40px;
+        line-height: 2em;
+        padding-left: 30px;
+    }
+    
+    .content1 {
+        opacity: 0%;
+        animation: slideInfo 1s ease forwards;
+    }
+    
+    .content2 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .content3 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.4s;
+    }
 }
 
-.contentsRight {
-    opacity: 0%;
-    width: 33%;
-    float: right;
-    margin-top: 90px;
-    margin-right: 250px;
-    line-height: 2em;
-    padding-right: 30px;
-    animation: slideInfo 1s ease forwards;
-    animation-delay: 0.2s;
+@media screen and (max-width: 400px) {
+    #footer {
+        height: 180px;
+    }
+    
+    .mainbody {
+        color: white;
+    }
+    
+    .mainbody {
+        font-size: 14px;
+        width: 70%;
+        left: 10px;
+        position: relative;
+        /* border-style: solid;
+        border-color: white;
+        border-width: 2px; */
+        margin-top: 170px;
+        margin-left: 40px;
+        line-height: 2em;
+        padding-left: 30px;
+    }
+    
+    .content1 {
+        opacity: 0%;
+        animation: slideInfo 1s ease forwards;
+    }
+    
+    .content2 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .content3 {
+        opacity: 0%;
+        margin-top: 100px;
+        animation: slideInfo 1s ease forwards;
+        animation-delay: 0.4s;
+    }
 }
 
-.contentsBottomRight {
-    opacity: 0%;
-    width: 33%;
-    position: absolute;
-    bottom: 358px;
-    left: 63%;
-    /* border-style: solid;
-    border-color: white;
-    border-width: 2px; */
-    margin-top: 90px;
-    margin-right: 90px;
-    line-height: 2em;
-    padding-right: 30px;
-    animation: slideInfo 1s ease forwards;
-    animation-delay: 0.4s;
+@media screen and (min-width: 200px) {
+    
 }
+
+@media screen and (min-width: 0px) {
+    
+}
+
+
 
 @keyframes slideInfo {
     from {
